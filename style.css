@@ -1,0 +1,132 @@
+/* ---- 🎯👉 GLOBALS 👈🎯 ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+/* ---- 🎯👉 MAIN 👈🎯 ---- */
+#main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0a1f43;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 10px 50px;
+  border: 5px solid green;
+}
+
+#title {
+  font-size: min(15vw, 50px);
+  text-align: center;
+}
+
+/* ---- 🎯👉 FORM 👈🎯 ---- */
+#form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#search {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+#search:focus {
+  outline: none;
+}
+
+#submit {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #ff1d41;
+  color: #fff;
+  cursor: pointer;
+}
+
+#submit:hover {
+  transition: background-color 0.3s;
+  background-color: #b40f2bfc;
+}
+
+#submit:active {
+  transform: scale(0.95);
+}
+
+/* ---- 🎯👉 WEATHER CARDS 👈🎯 ---- */
+#weather-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 100%;
+  max-width: 220px;
+  min-height: 300px;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 10px #53627c;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  padding: 35px 20px 20px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card .city {
+  font-size: 24px;
+  color: #596881;
+}
+
+.card .temp {
+  font-size: 65px;
+  font-weight: 600;
+  position: relative;
+}
+
+.card .temp::after {
+  content: "°C";
+  position: absolute;
+  top: 5px;
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.card .icon {
+  width: 80px;
+  height: 80px;
+}
+.card .description {
+  font-size: 16px;
+  color: #596881;
+  text-transform: capitalize;
+}
