@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <title>Weather API</title>
@@ -16,13 +19,26 @@
         <button id="submit" type="submit">Submit</button>
       </form>
 
+      <div id="msg-wrapper">
+        <p class="loading">Loading 🔍</p>
+        <p class="error">Error</p>
+      </div>
+
       <div id="weather-cards">
-        <!--         
-        <div class="card">
-          <h3 class="city">Paris</h3>
-          <h2 class="temp">9</h2>
-          <img src="images/favicon.ico" alt="weather icon" class="icon" />
-          <p class="description">Light Intensivity Drizzle</p>
+        <!-- <div class="card-wrapper">
+          <div class="card-flip flip">
+            <div class="card front-face">
+              <h3 class="city">New York</h3>
+              <h2 class="temp">15</h2>
+              <img src="images/favicon.ico" alt="weather icon" class="icon" />
+              <p class="desc">Light Intensivity Drizzle</p>
+            </div>
+            <div class="card back-face">
+              <h3 class="country">Egypt</h3>
+              <p class="date">2024-02-20</p>
+              <p class="time">05:30</p>
+            </div>
+          </div>
         </div> -->
       </div>
     </main>
